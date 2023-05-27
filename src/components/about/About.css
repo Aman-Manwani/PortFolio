@@ -1,0 +1,75 @@
+.left-sec{
+    width: 60%;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+.right-sec{
+    width: 40%;
+}
+
+.about-sec{
+    background-color: #081b29;
+    color: white;
+}
+
+.inner-about-sec{
+    width: 87%;
+    margin: auto;   
+}
+
+.about-heading{
+    font-size: 57px;
+}
+
+.subhead-about{
+    font-size: 30px;
+    color: #00abf0;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.descrip{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.button-about{
+    display: flex;
+    gap: 2rem;
+}
+
+.hire-btn{
+    background-color: #00abf0;
+    color: #081b29;
+    border: none;
+}
+
+.contact-btn{
+    background-color: #081b29;
+    border: 2px solid #00abf0;
+    color: #00abf0;
+}
+
+.btn-about{
+    padding: 8px 25px;
+    font-weight: 900;
+    font-size: 17px;
+    border-radius: 12px;
+    transition: 0.5s;
+}
+
+.contact-btn:hover{
+    cursor: pointer;
+    background-color: #00abf0;
+    color: #081b29;
+}
+
+.hire-btn:hover{
+    cursor: pointer;
+    background-color: #081b29;
+    color: #00abf0;
+    border: 2px solid #00abf0;
+}
+

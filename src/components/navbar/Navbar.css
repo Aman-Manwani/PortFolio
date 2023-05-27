@@ -1,0 +1,45 @@
+.logo{
+    width: 150px;
+    object-fit: contain;
+    margin: 15px 100px;
+}
+
+.navbar{
+    background-color: #081b29;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.components-navbar ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    color: white;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.components-navbar ul li:hover{
+    color: #00abf0;
+    cursor: pointer;
+}
+
+.components-navbar{
+    margin-right: 70px;
+}
+
+.resume{
+    border: 2px solid white;
+    border-radius: 19px;
+    padding: 6px 13px;
+}
+
+.resume:hover{
+    border: 2px solid #00abf0;
+}
+
+.components-navbar ul li{
+    transition: 0.5s;
+}
