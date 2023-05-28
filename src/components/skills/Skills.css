@@ -1,6 +1,7 @@
 .inner-tools{
-    width: 85%;
+    width: 87%;
     display: flex;
+    gap: 2.5rem;
 }
 
 .tools{
@@ -14,14 +15,49 @@
 
 .tools-left{
     width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .tools-right{
     width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.3rem;
+    row-gap: 1.6rem;
 }
 
 .tools-laptop{
-    width: 300px;
+    width: 400px;
     object-fit: contain;
     border-radius: 15%;
+}
+
+.skills{
+    width: 100px;
+    height: 100px;
+}
+
+.tools-heading{
+    font-size: 48px;
+    margin-top: 3rem;
+}
+
+.skill-card{
+    width: 120px;
+    height: 120px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+    border-radius: 9px;
+}
+
+.skill-card:hover{
+    cursor: pointer;
 }

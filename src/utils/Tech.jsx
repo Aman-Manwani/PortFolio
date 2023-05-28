@@ -11,6 +11,9 @@ import react from "./react.svg";
 import redux from "./redux.svg";
 import mongodb from "./mongo.png";
 import sass from "./sass.png";
+import HTML from "./HTML.jpg";
+import CSS from "./CSS.jpg"
+
 
 export default [
   typescript,
@@ -26,4 +29,6 @@ export default [
   tailwind,
   cplusplus,
   sass,
+  HTML,
+  CSS
 ];
