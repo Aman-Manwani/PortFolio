@@ -1,7 +1,7 @@
 .left-sec{
     width: 60%;
     padding-top: 10rem;
-    padding-bottom: 10rem;
+    padding-bottom: 9.3rem;
 }
 
 .right-sec{
@@ -16,6 +16,7 @@
 .inner-about-sec{
     width: 87%;
     margin: auto;   
+    display: flex;
 }
 
 .about-heading{
@@ -53,7 +54,7 @@
 }
 
 .btn-about{
-    padding: 8px 25px;
+    padding: 12px 25px;
     font-weight: 900;
     font-size: 17px;
     border-radius: 12px;
@@ -73,3 +74,59 @@
     border: 2px solid #00abf0;
 }
 
+.socials{
+    width: 87%;
+    display: flex;
+    margin: auto;
+    gap: 1.7rem;
+    padding-bottom: 62px;
+}
+
+.socials a{
+    display: inline-flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #00abf0;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #00abf0;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.socials a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #00abf0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.socials a:hover{
+    color: #081b29;
+}
+
+.socials a:hover::before{
+    width: 100%;
+}
+
+.right-sec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.front-personal-img{
+    width: 400px;
+    object-fit: contain;
+    border-radius: 20%;
+}

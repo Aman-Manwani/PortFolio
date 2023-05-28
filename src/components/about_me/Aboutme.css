@@ -1,0 +1,56 @@
+.about-me{
+    background-color: rgb(17,46,66);
+}
+
+.about-me-heading{
+    color: white;
+    font-size: 65px;
+    padding-top: 4.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.color_00abf0{
+    color: #00abf0;
+}
+
+.color_081b29{
+    color: #081b29;
+}
+
+.inner-content{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.personal-image{
+    width: 280px;
+    object-fit: contain;
+    border-radius: 50%;
+
+}
+
+.about-me-subhead{
+    font-size: 30px;
+    font-weight: bold;
+    color: #00b7ff;
+    margin: 30px auto;
+}
+
+.about-me-descrip{
+    width: 80%;
+    color: white;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.read-more-btn{
+    padding: 100px 25px;
+    font-weight: 900 !important;
+    margin-top: 20px;
+    margin-bottom: 60px;
+}

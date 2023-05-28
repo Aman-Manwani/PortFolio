@@ -1,0 +1,27 @@
+.inner-tools{
+    width: 85%;
+    display: flex;
+}
+
+.tools{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #081b29;
+    color: white;
+    height: 100vh;
+}
+
+.tools-left{
+    width: 40%;
+}
+
+.tools-right{
+    width: 60%;
+}
+
+.tools-laptop{
+    width: 300px;
+    object-fit: contain;
+    border-radius: 15%;
+}

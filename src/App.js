@@ -1,11 +1,14 @@
 import './App.css';
+import AboutMe from './pages/AboutMe';
 import Front from './pages/Front';
-import { BrowserRouter,Route,Routes } from 'react-router-dom';
+import Tools from './pages/Tools';
 
 function App() {
   return (
     <div className="App">
       <Front/>
+      <AboutMe/>
+      <Tools/>
     </div>
   );
 }
