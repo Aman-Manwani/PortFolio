@@ -50,12 +50,13 @@
 .skill-card{
     width: 120px;
     height: 120px;
-    background-color: white;
+    background-color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
     object-fit: contain;
     border-radius: 9px;
+    box-shadow:5px 5px #888888;;
 }
 
 .skill-card:hover{
