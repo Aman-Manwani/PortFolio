@@ -2,144 +2,130 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
 import SwiperCore, { Pagination, Navigation, Autoplay } from "swiper";
-import Image from '../../utils/firebase.webp'
+import "./Projects.css";
+import Project1 from "../../utils/Project1.png";
+import Project2 from "../../utils/Project2.png";
+import Project3 from "../../utils/Project3.png";
+import Project4 from "../../utils/Project4.png";
+import Typewriter from "typewriter-effect";
+import { useRef } from "react";
+
 
 SwiperCore.use([Pagination]);
 SwiperCore.use([Navigation]);
 SwiperCore.use([Autoplay]);
 
 const Project = () => {
+  const annoOne = useRef(null);
   return (
     <div className="projects">
-      <section className="home container" id="home">
-        <div className="swiper home-swiper">
-          <div className="swiper-wrapper">
-            <Swiper
-              spaceBetween={30}
-              pagination={{
-                el: ".swiper-pagination",
-                clickable: true,
+      <div className="projects-top">
+        <h1 className="projects-head">Worthy <span className="color_00abf0"> Projects</span></h1>
+        <div className="projects-subhead">
+          <Typewriter
+              onInit={(typewriter) => {
+                typewriter
+                  .typeString("Most Recent Work")
+                  .pauseFor(2000)
+                  .deleteAll()
+                  .start();
               }}
-              navigation={true}
-              loop={true}
-              autoplay={{
-                delay: 2000,
-                disableOnInteraction: false,
+              options={{
+                autoStart: true,
+                loop: true,
               }}
-              style={{
-                "--swiper-navigation-size": "25px",
-              }}
-            >
-              <SwiperSlide>
-                <div className="home__content grid">
-                  <div className="home__group">
-                    <img
-                      src={Image}
-                      alt=""
-                      className="home__img"
-                    />
-                    <div className="home__indicator"></div>
-                    <div className="home__details-img">
-                      <h4 className="home__details-title">Happy Halloween</h4>
-                      <span className="home__details-subtitle">
-                        The living Pumpkin
-                      </span>
-                    </div>
-                  </div>
-                  <div className="home__data">
-                    <h3 className="home__subtitle">#1 Top Scariest Ghost</h3>
-                    <h1 className="home__title">
-                      UOOOO <br />
-                      TRICK OR
-                      <br /> TREAT
-                    </h1>
-                    <p className="home__description">
-                      This Halloween purchase any halloween products at very
-                      high discounts
-                    </p>
-                    <div className="home__buttons">
-                      {/* <button className="button" onClick={play}>
-                      Play Music
-                    </button> */}
-                    </div>
-                  </div>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="home__content grid">
-                  <div className="home__group">
-                    <img
-                      src="./img/home2-img.png"
-                      alt=""
-                      className="home__img"
-                    />
-                    <div className="home__indicator"></div>
-                    <div className="home__details-img">
-                      <h4 className="home__details-title">Happy Halloween</h4>
-                      <span className="home__details-subtitle">
-                        The living Pumpkin
-                      </span>
-                    </div>
-                  </div>
-                  <div className="home__data">
-                    <h3 className="home__subtitle">#2 Top Best Duo</h3>
-                    <h1 className="home__title">
-                      BRING BACK <br />
-                      MY COTTON
-                      <br /> CANDY
-                    </h1>
-                    <p className="home__description">
-                      This Halloween purchase any halloween products at very
-                      high discounts
-                    </p>
-                    <div className="home__buttons">
-                      {/* <button className="button" onClick={play1}>
-                      Play Music
-                    </button> */}
-                    </div>
-                  </div>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="home__content grid">
-                  <div className="home__group">
-                    <img
-                      src="./img/home3-img.png"
-                      alt=""
-                      className="home__img"
-                    />
-                    <div className="home__indicator"></div>
-                    <div className="home__details-img">
-                      <h4 className="home__details-title">Captain Sem</h4>
-                      <span className="home__details-subtitle">
-                        Veteran Spooky Ghost
-                      </span>
-                    </div>
-                  </div>
-                  <div className="home__data">
-                    <h3 className="home__subtitle">#3 Top Scariest Ghost</h3>
-                    <h1 className="home__title">
-                      RESPAWN <br />
-                      THE SPOOKY
-                      <br /> SKULL
-                    </h1>
-                    <p className="home__description">
-                      In search for cute little puppy, captain Sem has come
-                      back.
-                    </p>
-                    <div className="home__buttons">
-                      {/* <button className="button" onClick={play2}>
-                      Play Music
-                    </button> */}
-                    </div>
-                  </div>
-                </div>
-              </SwiperSlide>
-            </Swiper>
-          </div>
-          <div className="swiper-pagination"></div>
+              ref={annoOne}
+            />
         </div>
-      </section>
+      </div>
+      <div className="swiper home-swiper">
+        <Swiper
+          spaceBetween={30}
+          pagination={{
+            el: ".swiper-pagination",
+            clickable: true,
+          }}
+          navigation={true}
+          loop={true}
+          autoplay={{
+            delay: 3500,
+            disableOnInteraction: false,
+          }}
+          style={{
+            "--swiper-navigation-size": "45px",
+          }}
+        >
+          <SwiperSlide>
+            <img src={Project1} alt="" className="project-img" />
+            <div className="project-descrip">
+              <div className="project-heading">Blog Website</div>
+              <div className="project-description">
+                Responsive to all Devices, in which you can read/write blogs in your interested category
+              </div>
+              <div className="project-btns">
+                <button className="project-btn1 btn-about">
+                  <a href="https://blogify4u.netlify.app/" target="_blank" rel="noopener noreferrer">Demo → </a>
+                </button>
+                <button className="project-btn2 btn-about">
+                  <a href="https://github.com/Aman-Manwani/Blog-App-MERN" target="_blank" rel="noopener noreferrer">Code → </a>
+                </button>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={Project2} alt="" className="project-img" />
+            <div className="project-descrip">
+              <div className="project-heading">Admin DashBoard</div>
+              <div className="project-description">
+                Responsive to all Devices, with SyncFusion Library and animated UI components
+              </div>
+              <div className="project-btns">
+                <button className="project-btn1 btn-about">
+                  <a href="http://admin-dashboard-two-brown.vercel.app/" target="_blank" rel="noopener noreferrer">Demo → </a>
+                </button>
+                <button className="project-btn2 btn-about">
+                  <a href="https://github.com/Aman-Manwani/Admin-Dashboard" target="_blank" rel="noopener noreferrer">Code → </a>
+                </button>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={Project3} alt="" className="project-img" />
+            <div className="project-descrip">
+              <div className="project-heading">Crypto Tracker</div>
+              <div className="project-description">
+                Website for Tracking Cryptocurrency Data i.e Volume, Price and many more ...
+              </div>
+              <div className="project-btns">
+                <button className="project-btn1 btn-about">
+                  <a href="https://cryptoo-trackerr.vercel.app/" target="_blank" rel="noopener noreferrer">Demo →</a>
+                </button>
+                <button className="project-btn2 btn-about">
+                  <a href="https://github.com/Aman-Manwani/Crypto-Price-Tracker" target="_blank" rel="noopener noreferrer">Code →</a>
+                </button>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={Project4} alt="" className="project-img" />
+            <div className="project-descrip">
+              <div className="project-heading">NetFlix Clone</div>
+              <div className="project-description">
+                This is a Netflix Clone with a functionality of Youtube Trailers/Teasers
+              </div>
+              <div className="project-btns">
+                <button className="project-btn1 btn-about">
+                  <a href="https://netflix-clonee.vercel.app/" target="_blank" rel="noopener noreferrer">Demo →</a>
+                </button>
+                <button className="project-btn2 btn-about">
+                  <a href="https://github.com/Aman-Manwani/Netflix-Clone" target="_blank" rel="noopener noreferrer">Code →</a>
+                </button>
+              </div>
+            </div>
+          </SwiperSlide>
+        </Swiper>
+        <div className="swiper-pagination"></div>
+      </div>
     </div>
   );
 };

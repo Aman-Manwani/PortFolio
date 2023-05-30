@@ -9,7 +9,7 @@ const Skills = () => {
       <div className="inner-tools">
         <div className="tools-left">
           <img src={LaptopImage} alt="Skills" className="tools-laptop" />
-          <div className="tools-heading">Tools and Technologies</div>
+          <div className="tools-heading">Tools and <span className="color_00abf0">Technologies</span></div>
         </div>
         <div className="tools-right">
           {Techs.map((tech, index) => (

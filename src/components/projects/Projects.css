@@ -1,174 +1,100 @@
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  margin: var(--header-height) 0 0 0;
-  font-family: var(--body-font);
-  font-size: var(--normal-font-size);
-  background: var(--body-color);
-  color: var(--text-color);
-}
-
-h1,
-h2,
-h3,
-h4 {
-  color: var(--title-color);
-  font-weight: var(--font-semi-bold);
-}
-
-ul {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-button,
-input {
-  border: none;
-  outline: none;
-}
-
-button {
-  cursor: pointer;
-  font-family: var(--body-font);
-  font-size: var(--normal-font-size);
-}
-
-/*=============== REUSABLE CSS CLASSES ===============*/
-.section {
-  padding: 4.5rem 0 2rem;
+.projects {
+  background-color: rgb(17, 46, 66);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  justify-content: space-around;
+  align-items: center;
 }
 
 
-/*=============== HOME ===============*/
-.home__content {
+.projects-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   row-gap: 1rem;
 }
 
-.home__group {
-  display: grid;
-  position: relative;
-  padding-top: 2rem;
+.projects-head {
+  font-size: 65px;
+  font-weight: 800;
 }
 
-.home__img {
-  height: 250px;
-  justify-self: center;
+.projects-subhead {
+  font-size: 30px;
+  font-weight: 800;
+  color: #00abf0;
 }
 
-.home__indicator {
-  width: 8px;
-  height: 8px;
-  background-color: var(--title-color);
-  border-radius: 50%;
-  position: absolute;
-  top: 7rem;
-  right: 2rem;
-}
-
-.home__indicator::after {
-  content: '';
-  position: absolute;
-  width: 1px;
-  height: 48px;
-  background-color: var(--title-color);
-  top: -3rem;
-  right: 45%;
-}
-
-.home__details-img {
-  position: absolute;
-  right: 0.5rem;
-}
-
-.home__details-title,
-.home__details-subtitle {
-  display: block;
-  font-size: var(--small-font-size);
-  text-align: right;
-}
-
-.home__subtitle {
-  font-size: var(--h3-font-size);
-  text-transform: uppercase;
-  margin-bottom: var(--mb-1);
-}
-
-.home__title {
-  font-size: var(--biggest-font-size);
-  font-weight: var(--font-black);
-  line-height: 109%;
-  margin-bottom: var(--mb-1);
-}
-
-.home__description {
-  margin-bottom: var(--mb-1);
-}
-
-.home__buttons {
+.swiper {
+  width: 87%;
+  height: 45vh;
+  background-color: #fff;
+  border-radius: 10px;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  color: black;
+  box-shadow: 4px #5b5a5a;
+  margin-bottom: 4rem;
 }
 
-/* Swiper Class */
-.swiper-pagination {
-  position: initial !important;
-  margin-top: var(--mb-1);
+.project-img {
+  width: 40%;
+  height: 100%;
+  margin-left: 4rem;
+  object-fit: contain;
+  /* border-radius: 190px; */
 }
 
-.swiper-pagination-bullet {
-  width: 5px;
-  height: 5px;
-  background-color: var(--title-color);
-  opacity: 1;
-  margin: 0.25rem;
+.swiper-slide {
+  display: flex;
+  gap: 5%;
 }
 
-.swiper-pagination-horizontal .swiper-pagination-bullets .swiper-pagination-bullet {
-  margin: 0 0.5rem;
+.project-descrip {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  justify-content: center;
+  align-items: baseline;
+  margin-right: 2.5rem;
 }
 
-.swiper-pagination-bullet-active {
-  width: 1.5rem !important;
-  height: 5px !important;
-  border-radius: 0.5rem !important;
-  color: white !important;
-  background-color: white !important;
+.project-heading{
+  font-size: 40px;
+  color: #000000;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 900;
 }
 
-.swiper-button-next{
-  color: rgb(161, 160, 160) !important;
+.project-description{
+  color: #5b5a5a;
+  font-size: 20px;
 }
 
-.swiper-button-prev{
-  color: rgb(161, 160, 160) !important;
+.project-btns{
+  display: flex;
+  gap: 1.2rem;
 }
 
-.swiper-wrapper{
-    display: flex;
+.project-btn1 a,.project-btn2 a{
+  text-decoration: none;
 }
 
-.projects{
-    background-color: rgb(17,46,66);
+.project-btn1 a{
+  color: #fff;
 }
 
-.home{
-    width: 80%;
-    margin: auto;
+.project-btn2 a{
+  color: #fff;
+}
 
+.project-btn1,.project-btn2{
+  background-color: rgb(0, 0, 0);
+}
+
+.project-btn1:hover,.project-btn2:hover{
+  cursor: pointer;
 }
