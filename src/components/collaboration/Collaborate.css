@@ -1,0 +1,55 @@
+.inner-collab-div{
+    width: 70%;
+    display: flex;
+    margin: 20px auto;
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    padding: 3rem 0rem 3rem 3rem;
+}
+
+.collaboration-div{
+    height: 89vh;
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #081b29;
+    color: white;
+}
+
+.collaboration-main-head{
+    font-size: 65px;
+    text-align: center;
+}
+
+.collaborate-subhead{
+    font-size: 20px;
+    color: rgb(98, 95, 95);
+}
+
+.collaboration-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.collaborate-head{
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.Collaborate-contact-btn{
+    background-color: black;
+    color: white;
+    font-weight: 900;
+}
+
+.collaboration-img{
+    width: 80%;
+    object-fit: contain;
+}
+
+.Collaborate-contact-btn:hover{
+    cursor: pointer;
+    background-color: #3e3c3c;
+}
