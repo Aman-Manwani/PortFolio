@@ -3,7 +3,7 @@ import Aboutme from '../components/about_me/Aboutme'
 
 const AboutMe = () => {
   return (
-    <div>
+    <div className='second-page'>
       <Aboutme/>
     </div>
   )

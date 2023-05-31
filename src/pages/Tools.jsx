@@ -3,7 +3,7 @@ import Skills from "../components/skills/Skills.jsx";
 
 const Tools = () => {
   return (
-    <div>
+    <div className="third-page">
       <Skills/>
     </div>
   );
