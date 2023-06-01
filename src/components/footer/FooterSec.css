@@ -1,0 +1,32 @@
+.footer{
+    background-color: #081b29;
+    color: white;
+}
+
+.footer-heading{
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+}
+
+.footer-quote{
+    font-size: 23px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.socials-in-footer{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 3rem;
+    padding-top: 2rem;
+}
+
+.made-with{
+    text-align: center;
+    padding-bottom: 30px;
+}

@@ -6,6 +6,7 @@ import ProjectSection from "./pages/ProjectSection";
 import Tools from "./pages/Tools";
 import Navbar from "./components/navbar/Navbar";
 import Contact from "./pages/Contact";
+import Footer from "./pages/Footer";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <ProjectSection />
       <NewProject />
       <Contact/>
+      <Footer/>
     </div>
   );
 }

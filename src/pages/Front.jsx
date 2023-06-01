@@ -3,7 +3,7 @@ import About from '../components/about/About'
 
 const Front = () => {
   return (
-    <div>
+    <div id='/'>
       <About/>
     </div>
   )

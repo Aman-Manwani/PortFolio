@@ -7,7 +7,9 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <div className="logo-div">
-        <img src={Logo} alt="aman" className="logo" />
+        <a href="#/" style={{textDecoration:'none',color:'inherit'}}>
+          <img src={Logo} alt="aman" className="logo" />
+        </a>
       </div>
       <div className="components-navbar">
         <ul>

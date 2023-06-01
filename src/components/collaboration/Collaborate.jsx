@@ -18,7 +18,9 @@ const Collaborate = () => {
             </div>
             <div className='Collaborate-contact-btn-div'>
               <button className='Collaborate-contact-btn btn-about'>
-                Contact Me →
+                <a href='#contact-me' style={{textDecoration:'none',color:'inherit'}}>
+                  Contact Me →
+                </a>
               </button>
             </div>
           </div>
