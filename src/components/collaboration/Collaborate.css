@@ -42,6 +42,7 @@
     background-color: black;
     color: white;
     font-weight: 900;
+    margin-top: 0.6rem;
 }
 
 .collaboration-img{
@@ -52,4 +53,10 @@
 .Collaborate-contact-btn:hover{
     cursor: pointer;
     background-color: #3e3c3c;
+}
+
+.collaboration-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

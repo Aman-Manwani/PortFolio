@@ -3,7 +3,7 @@ import ContactUs from '../components/contact_us/ContactUs'
 
 const Contact = () => {
   return (
-    <div>
+    <div id='contact-me'>
       <ContactUs/>
     </div>
   )
