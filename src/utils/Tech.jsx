@@ -13,7 +13,10 @@ import mongodb from "./mongo.png";
 import sass from "./sass.png";
 import HTML from "./HTML.jpg";
 import CSS from "./CSS.jpg"
-
+import AWS from "./AWS.png"
+import Jenkins from "./Jenkins.png"
+import Kubernetes from "./Kubernetes.png"
+import Docker from "./Docker.png"
 
 export default [
   typescript,
@@ -30,5 +33,9 @@ export default [
   cplusplus,
   sass,
   HTML,
-  CSS
+  CSS,
+  AWS,
+  Jenkins, 
+  Kubernetes, 
+  Docker,
 ];

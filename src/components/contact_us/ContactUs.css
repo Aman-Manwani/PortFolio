@@ -9,7 +9,6 @@
     display:flex;
     flex-direction: column;
     row-gap: 2rem;
-
 }
 
 .contact-heading{
@@ -21,7 +20,6 @@
 }
 
 .contact-input{
-    width: 48%;
     padding: 0.7rem 2rem 0.7rem 1.2rem ;
     font-size: 25px;
     border-radius: 10px;
@@ -51,8 +49,8 @@
 }
 
 .contact-inner-first-div{
-    display: flex;
-    justify-content: space-between;
+    /* display: flex;
+    justify-content: space-between; */
 }
 
 .contact-submit-btn{

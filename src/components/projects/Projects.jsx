@@ -6,7 +6,7 @@ import "./Projects.css";
 import Project1 from "../../utils/Project1.png";
 import Project2 from "../../utils/Project2.png";
 import Project3 from "../../utils/Project3.png";
-import Project4 from "../../utils/Project4.png";
+import Project5 from "../../utils/Project5.png";
 import Typewriter from "typewriter-effect";
 import { useRef } from "react";
 
@@ -26,7 +26,7 @@ const Project = () => {
               onInit={(typewriter) => {
                 typewriter
                   .typeString("Most Recent Work")
-                  .pauseFor(2000)
+                  .pauseFor(4000)
                   .deleteAll()
                   .start();
               }}
@@ -58,18 +58,29 @@ const Project = () => {
           <SwiperSlide>
             <img src={Project1} alt="" className="project-img" />
             <div className="project-descrip">
-              <div className="project-heading">Blog Website</div>
+              <div className="project-heading">Multilingual Collaborative Compiler</div>
               <div className="project-description">
-                Responsive to all Devices, in which you can read/write blogs in your interested category
+                A multi-language compiler to run your programming codes with your fellow developers  
               </div>
               <div className="project-btns">
-                <button className="project-btn1 btn-about">
-                  <a href="https://blogify4u.netlify.app/" target="_blank" rel="noopener noreferrer">Demo → </a>
-                </button>
                 <button className="project-btn2 btn-about">
-                  <a href="https://github.com/Aman-Manwani/Blog-App-MERN" target="_blank" rel="noopener noreferrer">Code → </a>
+                  <a href="https://github.com/Aman-Manwani/Multilingual-Compiler" target="_blank" rel="noopener noreferrer">Code → </a>
                 </button>
               </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={Project5} alt="" className="project-img" />
+            <div className="project-descrip">
+              <div className="project-heading">Jenkins CI/CD Pipeline</div>
+              <div className="project-description">
+                Production grade CI/CD pipeline with use of security tools like Trivy and Sonarqube and Argo CD monitoring like Prometheus and Grafana
+              </div>
+              {/* <div className="project-btns">
+                <button className="project-btn2 btn-about">
+                  <a href="https://github.com/Aman-Manwani/Netflix-Clone" target="_blank" rel="noopener noreferrer">Code →</a>
+                </button>
+              </div> */}
             </div>
           </SwiperSlide>
           <SwiperSlide>
@@ -80,9 +91,6 @@ const Project = () => {
                 Responsive to all Devices, with SyncFusion Library and animated UI components
               </div>
               <div className="project-btns">
-                <button className="project-btn1 btn-about">
-                  <a href="http://admin-dashboard-two-brown.vercel.app/" target="_blank" rel="noopener noreferrer">Demo → </a>
-                </button>
                 <button className="project-btn2 btn-about">
                   <a href="https://github.com/Aman-Manwani/Admin-Dashboard" target="_blank" rel="noopener noreferrer">Code → </a>
                 </button>
@@ -97,28 +105,8 @@ const Project = () => {
                 Website for Tracking Cryptocurrency Data i.e Volume, Price and many more ...
               </div>
               <div className="project-btns">
-                <button className="project-btn1 btn-about">
-                  <a href="https://cryptoo-trackerr.vercel.app/" target="_blank" rel="noopener noreferrer">Demo →</a>
-                </button>
                 <button className="project-btn2 btn-about">
                   <a href="https://github.com/Aman-Manwani/Crypto-Price-Tracker" target="_blank" rel="noopener noreferrer">Code →</a>
-                </button>
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={Project4} alt="" className="project-img" />
-            <div className="project-descrip">
-              <div className="project-heading">NetFlix Clone</div>
-              <div className="project-description">
-                This is a Netflix Clone with a functionality of Youtube Trailers/Teasers
-              </div>
-              <div className="project-btns">
-                <button className="project-btn1 btn-about">
-                  <a href="https://netflix-clonee.vercel.app/" target="_blank" rel="noopener noreferrer">Demo →</a>
-                </button>
-                <button className="project-btn2 btn-about">
-                  <a href="https://github.com/Aman-Manwani/Netflix-Clone" target="_blank" rel="noopener noreferrer">Code →</a>
                 </button>
               </div>
             </div>

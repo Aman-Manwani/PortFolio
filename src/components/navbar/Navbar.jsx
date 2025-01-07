@@ -1,7 +1,7 @@
 import React from "react";
 import Logo from "./Logo.png";
 import "./Navbar.css";
-import Resume from '../../utils/aman.pdf'
+import Resume from '../../utils/Aman_Manwani_Resume.pdf'
 
 const Navbar = () => {
   return (

@@ -38,8 +38,9 @@
 }
 
 .skills{
-    width: 100px;
-    height: 100px;
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
 }
 
 .tools-heading{
@@ -48,8 +49,8 @@
 }
 
 .skill-card{
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
     background-color: #ffffff;
     display: flex;
     justify-content: center;

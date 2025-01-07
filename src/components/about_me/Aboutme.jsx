@@ -38,9 +38,9 @@ const About_me = () => {
           />
         </div>
         <div className='about-me-descrip'>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores ab impedit cupiditate repellat iusto unde omnis atque expedita, tempore dolor, animi nesciunt dolorem beatae sit dolores eius fugit praesentium consectetur rem voluptatibus repellendus accusantium. Mollitia aliquam facere cumque voluptate velit.
+        I am a Full Stack Developer with a passion for building scalable and efficient web applications. With hands-on experience in modern technologies like React.js, Next js and Node.js. My journey includes working on innovative projects, contributing to open-source, and some internship experiences. Beyond coding, I enjoy mentoring aspiring developers and exploring the latest trends in technology.
         </div>
-        <button className='hire-btn btn-about read-more-btn'>Read More ...</button>
+        {/* <button className='hire-btn btn-about read-more-btn'>Read More ...</button> */}
       </div>
     </div>
   )

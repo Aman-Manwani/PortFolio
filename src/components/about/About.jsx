@@ -11,10 +11,7 @@ const About = () => {
           <h1 className="about-heading">Hi, I'm Aman Manwani</h1>
           <div className="subhead-about">Full Stack Developer</div>
           <div className="descrip">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
-            laboriosam iure ducimus provident asperiores repellendus numquam
-            possimus magni animi aperiam. Laboriosam numquam eligendi eos!
-            Molestias sequi reprehenderit,
+            I am a passionate Full Stack Developer with expertise in building scalable web applications and user-friendly interfaces. With experience in modern technologies like React, Node.js, and Kubernetes, I aim to deliver innovative solutions that drive digital transformation. Let's collaborate to turn ideas into reality!"
           </div>
           <div className="button-about">
             <button className="hire-btn btn-about">Hire Me</button>
